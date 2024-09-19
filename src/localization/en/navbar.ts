@@ -4,7 +4,7 @@ export const navbar: INavbarModuleData = {
   menuItems: {
     home: "Home .",
     about: "About me .",
-    blog: "Blog .",
-    contact: "Contact Me ."
+    blog: "Blog me .",
+    contact: "Contact me ."
   }
 }
