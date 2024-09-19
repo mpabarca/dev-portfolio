@@ -12,13 +12,15 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "4rem",
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       colors: {
+        white: "#ffffff",
+        periwinkle: "#676fb2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -72,6 +74,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        albert: ['var(--font-albert-sans)'],
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

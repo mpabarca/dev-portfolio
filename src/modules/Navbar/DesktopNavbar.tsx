@@ -17,7 +17,7 @@ interface DesktopNavbarProps {
 
 const DesktopNavbar = ({ context, content, style, navigationModules }: DesktopNavbarProps) => {
   const mainStyle: React.CSSProperties = style.isSidebar
-  ? { width: "200px" } 
+  ? { width: "250px" } 
   : { height: "100px" }
 
   const navStyle = `
@@ -25,7 +25,7 @@ const DesktopNavbar = ({ context, content, style, navigationModules }: DesktopNa
     ${
       style.isSidebar
         ? `h-screen p-8 flex-col fixed left-0`
-        : `w-full p-8 flex-row items-center fixed top-0`
+        : `w-full container flex-row items-center fixed top-0`
     }
   `;
 
