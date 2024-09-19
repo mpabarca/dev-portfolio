@@ -2,9 +2,11 @@ import { ISiteContext } from "@/interfaces";
 import styles from './Home.module.css';
 
 export interface IHomeData {
+  overline: string;
   title: string;
-  welcomeMessage: string;
-  intro: string;
+  subtitle: string;
+  contactButton: string;
+  aboutButton: string;
 }
 
 interface HomeModuleProps {
@@ -16,9 +18,9 @@ interface HomeModuleProps {
 const HomeModule = ({ id, context, content }: HomeModuleProps) => {
   return (
     <section id={id} className="w-full h-screen p-8 flex flex-col items-start justify-center">
-      <h1>{content.title}</h1>
-      <p>{content.welcomeMessage}</p>
-      <p>{content.intro}</p>
+      <p>{content.overline}</p>
+      <p>{content.title}</p>
+      <p>{content.subtitle}</p>
     </section>
   );
 };

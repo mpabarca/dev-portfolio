@@ -1,7 +1,9 @@
 import { IHomeData } from "@/modules/Home";
 
 export const home: IHomeData = {
-  title: "Home",
-  welcomeMessage: "Welcome to My Website",
-  intro: "This is the place where I showcase my work and skills."
+  overline: "Hola!",
+  title: "I'm María Paz Abarca,",
+  subtitle: "a chilean Digital Nomad and Frontend Web Developer",
+  contactButton: "Get In Touch",
+  aboutButton: "About Me"
 };
