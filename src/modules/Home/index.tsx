@@ -22,11 +22,11 @@ const HomeModule = ({ id, context, content }: HomeModuleProps) => {
   return (
     <section
       id={id}
-      className='w-full h-screen container flex flex-col items-start justify-center gap-8'
+      className='w-full h-screen container flex flex-col items-start justify-center gap-10'
     >
-      <header className="flex flex-col gap-5">
+      <header className="flex flex-col gap-6">
         <p className="text-gray-400 dark:text-gray-300 text-2xl lg:text-2xl font-medium">{content.overline}</p>
-        <h1 className="text-4xl lg:text-6xl font-semibold">{content.title}</h1>
+        <h1 className="text-4xl lg:text-7xl font-semibold">{content.title}</h1>
         <span className="inline-flex flex-col items-baseline">
           <p className="text-2xl lg:text-4xl lg:font-medium">{content.subtitle1}</p>
           <p className="text-2xl lg:text-4xl lg:font-medium">{content.subtitle2}</p>
@@ -34,7 +34,7 @@ const HomeModule = ({ id, context, content }: HomeModuleProps) => {
       </header>
 
       <nav>
-        <ul className="flex flex-col lg:flex-row gap-4 lg:gap-2">
+        <ul className="flex flex-col lg:flex-row gap-4 lg:gap-4">
           <li>
             <Link
               className={buttonVariants({ variant: "default" })}
