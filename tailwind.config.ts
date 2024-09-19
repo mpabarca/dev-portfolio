@@ -12,13 +12,15 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "4rem",
       screens: {
         "2xl": "1400px",
       },
     },
     extend: {
       colors: {
+        white: "#ffffff",
+        periwinkle: "#676fb2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

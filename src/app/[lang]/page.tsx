@@ -42,7 +42,7 @@ const Page = async() => {
       {/* Navbar */}
       <Navbar context={context} content={content[Namespaces.NAVBAR]} desktopNavbarStyle={desktopNavbarStyle} navigationModules={navigationModules} />
       {/* Main Content */}
-      <main className={`${desktopNavbarStyle.isSidebar ? "lg:max-w-[calc(100vw-200px)] lg:right-0 lg:absolute" : ""} w-full flex-1 space-y-16`}>
+      <main className={`${desktopNavbarStyle.isSidebar ? "lg:max-w-[calc(100vw-250px)] lg:right-0 lg:absolute" : ""} w-full flex-1 space-y-16`}>
         {/* Dynamically render the Module Section */}
         {modulesToShow.map((namespace: Namespaces) => {
           const ModuleComponent = componentMap[namespace];
