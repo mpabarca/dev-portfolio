@@ -2,8 +2,19 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/theme-provider";
+import { Albert_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  variable: '--font-inter'
+});
+
+const albert_sans = Albert_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-albert-sans'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${albert_sans.variable}`}>
+      <body >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
