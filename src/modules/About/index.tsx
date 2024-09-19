@@ -1,8 +1,13 @@
 import { ISiteContext } from "@/interfaces";
 
 export interface IAboutData {
-  title: string
-  description: string
+  title: string;
+  description: string;
+  shortcutDescription: string;
+  downloadCVButton: string;
+  linkedInButton: string;
+  techStackDescription: string;
+  techStack: string[]
 }
 
 interface AboutModuleProps {
