@@ -2,7 +2,7 @@ import { ISiteContext } from "@/interfaces";
 import LanguageToggle from "@/components/language-toggle";
 import { DisplayModeToggle } from "@/components/display-mode-toggle";
 import Image from "next/image";
-import Logo from "/public/next.svg";
+import Logo from "/public/logo.png";
 import { cn } from "@/lib/client-utils";
 import Link from "next/link";
 import { Namespaces } from "@/localization/enums";
@@ -45,8 +45,8 @@ const DesktopNavbar = ({ context, content, style, navigationModules }: DesktopNa
           className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
           src={Logo}
           alt='Logo'
-          width={180}
-          height={37}
+          width={76}
+          height={76}
           priority
         />
       </Link>

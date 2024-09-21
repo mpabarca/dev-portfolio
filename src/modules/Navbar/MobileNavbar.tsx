@@ -3,7 +3,7 @@ import LanguageToggle from "@/components/language-toggle";
 import { DisplayModeToggle } from "@/components/display-mode-toggle";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
-import Logo from "/public/next.svg";
+import Logo from "/public/logo.png";
 import Link from "next/link";
 import { Namespaces } from "@/localization/enums";
 import { INavbarModuleData } from "./";
@@ -50,8 +50,8 @@ const MobileNavbar = ({
                 className='relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert'
                 src={Logo}
                 alt='Logo'
-                width={100}
-                height={30}
+                width={76}
+                height={76}
                 priority
               />
             </Link>
