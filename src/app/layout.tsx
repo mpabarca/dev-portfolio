@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/theme-provider";
 import { Albert_Sans } from 'next/font/google'
+import { ISiteContext } from "@/interfaces";
+import { getSiteContext } from "@/lib/general-utils";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -26,8 +28,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const context: ISiteContext =  getSiteContext()
+
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${albert_sans.variable}`}>
+    <html lang={context.locale} suppressHydrationWarning className={`${inter.variable} ${albert_sans.variable}`}>
+      <head>
+        <link rel="icon" href="/icon.ico" sizes="any" />
+      </head>
       <body >
           <ThemeProvider
             attribute="class"
